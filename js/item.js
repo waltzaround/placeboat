@@ -64,7 +64,51 @@ const events = [
     action: ' Spend $12,000 on a replacement.',
     price: 12000,
   },
-
+  {
+    event: " You need to have your boating license renewed.",
+    action: 'Spend 4 weekends in retraining classes and $4,000.',
+    price: 12000,
+  },
+  {
+    event: " New government regulations require you to replace all of your lifejackets",
+    action: '  Spend $4,000 replacing your lifejackets',
+    price: 12000,
+  },
+  {
+    event: "Your onboard toilet gets blocked. This causes the macerator to overheat and fail.",
+    action: ' Spend $12,000 on a replacement.',
+    price: 12000,
+  },
+  {
+    event: " Your annual VHF radio license is due. ",
+    action: ' Pay $500.',
+    price: 500,
+  },
+  {
+    event: " Your oil filter is dirty, and needs replacement.",
+    action: ' Spend $2,000 on a replacement.',
+    price: 2000,
+  },
+  {
+    event: " Your spark plugs have failed, and needs replacement.",
+    action: ' Spend $2,000 on a replacement.',
+    price: 2000,
+  },
+  {
+    event: " Your oil filter is dirty, and needs replacement.",
+    action: ' Spend $2,000 on a replacement.',
+    price: 2000,
+  },
+  {
+    event: " Your power steering fluid has gone bad, and needs replacement.",
+    action: ' Spend $2,000 on refills.',
+    price: 2000,
+  },
+  {
+    event: " Your fuel delivery system has failed, and needs replacement.",
+    action: ' Spend $20,000 on a replacement.',
+    price: 20000,
+  },
 ];
 function audioPotato() {
 var audio = new Audio('kaching.mp3');
@@ -79,7 +123,7 @@ var audioBg = new Audio('bg-music.mp3');
 document.body.addEventListener("mousemove", function () {
   audioBg.play();
   audioBg.loop = true;
-audioBg.volume = 0.2;
+  audioBg.volume = 0.2;
 })
 
 
