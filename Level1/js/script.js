@@ -871,7 +871,7 @@ var Boat = function() {
 		);
 
 	controls = new THREE.OrbitControls(camera, renderer.domElement);
-	camera.position.set(0,30,100);
+	camera.position.set(64,60,40);
 	this.group.add(camera);
 
 	this.group.applyMatrix( new THREE.Matrix4().makeTranslation(0, 0, -24) );
@@ -1575,50 +1575,50 @@ function update (){
 	// boat.engineBlock.rotation.z = Math.sin(Date.now() * 0.05) * Math.PI * 0.005 ;
 	// }
 
-	if ( keyboard.pressed("W") ) {
-		boat.mesh.translateZ( -moveDistance );
+	// if ( keyboard.pressed("W") ) {
+	// 	boat.mesh.translateZ( -moveDistance );
 
-		boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
-	}	
+	// 	boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
+	// }	
 
-	if ( keyboard.pressed("S") ) {
-		boat.mesh.translateZ(  moveDistance );
+	// if ( keyboard.pressed("S") ) {
+	// 	boat.mesh.translateZ(  moveDistance );
 
-		boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), -propellorAngle);		
-	}
+	// 	boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), -propellorAngle);		
+	// }
 
-	if ( keyboard.pressed("A") ) {
-		setTimeout(function(){
-			boat.mesh.rotateOnAxis( new THREE.Vector3(0,1,0), rotateAngle);
-		}, 100);
+	// if ( keyboard.pressed("A") ) {
+	// 	setTimeout(function(){
+	// 		boat.mesh.rotateOnAxis( new THREE.Vector3(0,1,0), rotateAngle);
+	// 	}, 100);
 
-		if (keyboard.pressed("S")) {
-			boat.engineBlock.rotation.y = THREE.Math.clamp(engineY + (delta*2.5), -maxEngineY, maxEngineY);
-		} else {
-			boat.engineBlock.rotation.y = THREE.Math.clamp(engineY - (delta*2.5), -maxEngineY, maxEngineY);	
-		}
+	// 	if (keyboard.pressed("S")) {
+	// 		boat.engineBlock.rotation.y = THREE.Math.clamp(engineY + (delta*2.5), -maxEngineY, maxEngineY);
+	// 	} else {
+	// 		boat.engineBlock.rotation.y = THREE.Math.clamp(engineY - (delta*2.5), -maxEngineY, maxEngineY);	
+	// 	}
 
-		if ( ! (keyboard.pressed("W") || keyboard.pressed("S"))) {
-			boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
-		}
-	}
+	// 	if ( ! (keyboard.pressed("W") || keyboard.pressed("S"))) {
+	// 		boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
+	// 	}
+	// }
 
-	if ( keyboard.pressed("D") ){
-		setTimeout(function(){
-			boat.mesh.rotateOnAxis( new THREE.Vector3(0,1,0), -rotateAngle);
-		}, 100);
+	// if ( keyboard.pressed("D") ){
+	// 	setTimeout(function(){
+	// 		boat.mesh.rotateOnAxis( new THREE.Vector3(0,1,0), -rotateAngle);
+	// 	}, 100);
 
-		if (keyboard.pressed("S")) {
-			boat.engineBlock.rotation.y = THREE.Math.clamp(engineY - (delta*2.5), -maxEngineY, maxEngineY);
-		} else {
-			boat.engineBlock.rotation.y = THREE.Math.clamp(engineY + (delta*2.5), -maxEngineY, maxEngineY);
-		}
+	// 	if (keyboard.pressed("S")) {
+	// 		boat.engineBlock.rotation.y = THREE.Math.clamp(engineY - (delta*2.5), -maxEngineY, maxEngineY);
+	// 	} else {
+	// 		boat.engineBlock.rotation.y = THREE.Math.clamp(engineY + (delta*2.5), -maxEngineY, maxEngineY);
+	// 	}
 
 
-		if ( ! (keyboard.pressed("W") || keyboard.pressed("S"))) {
-			boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
-		}
-	}
+	// 	if ( ! (keyboard.pressed("W") || keyboard.pressed("S"))) {
+	// 		boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
+	// 	}
+	// }
 
 	// Steering Decay
 
