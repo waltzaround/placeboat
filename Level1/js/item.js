@@ -37,8 +37,8 @@ let totalDebt = 0
 function renderDebt() {
   const item = document.getElementsByClassName('status').item(0)
   const div = document.createElement('div')
-  const text = document.createElement('p')
-  text.innerText = `Total Debt: $${totalDebt}`
+  const text = document.createElement('h3')
+  text.innerText = `$${totalDebt}`
   div.appendChild(text)
   item.appendChild(div)
 }
