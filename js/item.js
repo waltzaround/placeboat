@@ -181,7 +181,9 @@ giveUpBtn.addEventListener("click", () => {
 
   if (totalDebt == 0) {
     window.alert('You win the game!')
+    window.location = "https://i.kym-cdn.com/photos/images/newsfeed/000/048/783/a_winner_is_you20110724-22047-1nd3wif.jpg"
   } else {
-  window.alert('Hah fuck off, pay up you rich cunt')
+    window.alert('Hah fuck off, time to pay up you rich cunt')
+    window.location = "https://www.insolvency.govt.nz/personal-debt/personal-insolvency-options/bankruptcy/"
   }
 });

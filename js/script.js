@@ -1577,17 +1577,24 @@ function update (){
 
 	if ( keyboard.pressed("W") ) {
 		boat.mesh.translateZ( -moveDistance );
+		totalDebt -= 30;
+		renderDebt()
 
 		boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), propellorAngle);
 	}	
 
 	if ( keyboard.pressed("S") ) {
 		boat.mesh.translateZ(  moveDistance );
+		totalDebt -= 30;
+		renderDebt()
 
 		boat.propellor.rotateOnAxis( new THREE.Vector3(0,1,0), -propellorAngle);		
 	}
 
 	if ( keyboard.pressed("A") ) {
+		totalDebt -= 30;
+		renderDebt()
+		console.log(totalDebt)
 		setTimeout(function(){
 			boat.mesh.rotateOnAxis( new THREE.Vector3(0,1,0), rotateAngle);
 		}, 100);
@@ -1604,6 +1611,8 @@ function update (){
 	}
 
 	if ( keyboard.pressed("D") ){
+		totalDebt -= 30;
+		renderDebt()
 		setTimeout(function(){
 			boat.mesh.rotateOnAxis( new THREE.Vector3(0,1,0), -rotateAngle);
 		}, 100);
