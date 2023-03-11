@@ -34,14 +34,17 @@ function renderDebt() {
   const item = document.getElementsByClassName('status').item(0)
   const div = document.createElement('div')
   const text = document.createElement('h3')
-  text.innerText = `$${totalDebt}`
-  div.appendChild(text)
-  item.appendChild(div)
+  text.innerText = `Total Debt: $${totalDebt}`
+  div.innerHTML = text.innerHTML
+  item.innerHTML = div.innerHTML
 }
 renderDebt();
 
-const payBtn = document.getElementById("Will");
-const giveUpBtn = document.getElementById("Will2");
-payBtn.addEventListener("click", () => {});
+const payBtn = document.getElementById("will1");
+const giveUpBtn = document.getElementById("will2");
+payBtn.addEventListener("click", () => {
+  totalDebt -= events[0].price;
+  renderDebt()
+});
 
 giveUpBtn.addEventListener("click", () => {});
