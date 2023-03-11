@@ -12,10 +12,11 @@ const events = [
     price: 120,
   },
 ];
+function audioPotato() {
 var audio = new Audio('kaching.mp3');
 const newAudio = audio.cloneNode()
-
-
+newAudio.play()
+}
 
 
 // function itemRender() {
@@ -50,7 +51,7 @@ const giveUpBtn = document.getElementById("will2");
 payBtn.addEventListener("click", () => {
   totalDebt -= events[0].price;
   renderDebt()
-  newAudio.play()
+  audioPotato();
   
 });
 
