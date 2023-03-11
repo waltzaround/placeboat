@@ -48,6 +48,8 @@ const giveUpBtn = document.getElementById("will2");
 payBtn.addEventListener("click", () => {
   totalDebt -= events[0].price;
   renderDebt()
+  audio.play();
+  
 });
 
 giveUpBtn.addEventListener("click", () => {});
