@@ -35,22 +35,52 @@ const events = [
     price: 12000,
   },
   {
-    event: "Your have an awesome day out on the water with the sun shining and wind in your hair. Roll a die and move forward that many places. After a plesant lunch on an island only accessible by boat, a stray rope gets caught in your propeller.",
+    event: "Your have an awesome day out on the water with the sun shining and wind in your hair.\n\n After a plesant lunch on an island only accessible by boat, a stray rope gets caught in your propeller.",
     action: 'Spend the rest of the afternoon and $1000 detangling and repairing the propeller.',
     price: 12000,
   },
+  {
+    event: "Is that orange patch on the hull meant to be there? You run your finger along it and realise it's rust.",
+    action: 'Spend $30,000 having your hull replaced.',
+    price: 30000,
+  },
+  {
+    event: "  Office Christmas party on your boat! Everyone has a great time on the water. Some colleagues have a little too much fun.",
+    action: ' Spend $1000 on professional cleaners to remove the vomit stains',
+    price: 1000,
+  },
+  {
+    event: "Boat's out for the boys!  It's a bachelor party!  Unfortunately one of the bachelors hs a bit of a shady side, and used this opportunity to do a quick drug run out to Kawau Island.  Your boat is seized by the coastguard.",
+    action: 'Spend $50,000 on lawyers to get your boat back',
+    price: 50000,
+  },
+  {
+    event: " You need to have your boating license renewed.",
+    action: ' Spend $500 on license renewal',
+    price: 500,
+  },
+  {
+    event: " A lightning strike hits your radar, rendering it worthless.",
+    action: ' Spend $12,000 on a replacement.',
+    price: 12000,
+  },
+
 ];
 function audioPotato() {
 var audio = new Audio('kaching.mp3');
 const newAudio = audio.cloneNode()
-newAudio.play()
+newAudio.play();
 }
 
 
 var audioBg = new Audio('bg-music.mp3');
-audioBg.play();
-audioBg.loop = true;
+
+
+document.body.addEventListener("mousemove", function () {
+  audioBg.play();
+  audioBg.loop = true;
 audioBg.volume = 0.2;
+})
 
 
 // function itemRender() {
@@ -104,5 +134,10 @@ function renderEvent() {
 renderEvent()
 
 giveUpBtn.addEventListener("click", () => {
-  window.alert('Hah fuck off, pay up you rich c*nt')
+
+  if (totalDebt == 0) {
+    window.alert('You win the game!')
+  } else {
+  window.alert('Hah fuck off, pay up you rich cunt')
+  }
 });
