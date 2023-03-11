@@ -106,10 +106,10 @@ function formatNumber(number) {
 }
 
 function renderDebt() {
-  const item = document.getElementsByClassName('status').item(0)
+  const item = document.getElementsByClassName('moneyAmount').item(0)
   const div = document.createElement('div')
   const text = document.createElement('h3')
-  text.innerText = `Total Debt: $${formatNumber(totalDebt)}`
+  text.innerText = `$${formatNumber(totalDebt)}`
   div.innerHTML = text.innerHTML
   item.innerHTML = div.innerHTML
 }

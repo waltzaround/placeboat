@@ -41,6 +41,10 @@ margin-bottom: 1rem;
 .purchase p {
 	line-height: 1.5;
 }
+
+.moneyAmount {
+font-size: 2rem;
+}
 #minh {
 	margin-top: 2rem;
 }
