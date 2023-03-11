@@ -13,6 +13,8 @@ const events = [
   },
 ];
 var audio = new Audio('kaching.mp3');
+const newAudio = audio.cloneNode()
+
 
 
 
@@ -48,7 +50,7 @@ const giveUpBtn = document.getElementById("will2");
 payBtn.addEventListener("click", () => {
   totalDebt -= events[0].price;
   renderDebt()
-  audio.play();
+  newAudio.play()
   
 });
 
