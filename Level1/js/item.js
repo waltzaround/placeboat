@@ -93,4 +93,6 @@ function renderEvent() {
 }
 renderEvent()
 
-giveUpBtn.addEventListener("click", () => {});
+giveUpBtn.addEventListener("click", () => {
+  window.alert('Hah fuck off, pay up you rich c*nt')
+});
