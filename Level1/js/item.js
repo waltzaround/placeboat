@@ -63,6 +63,7 @@ newAudio.play()
 // itemRender()
 
 let totalDebt = 0;
+let eventIndex = Math.floor(Math.random() * events.length);
 
 function renderDebt() {
   const item = document.getElementsByClassName('status').item(0)
@@ -77,10 +78,19 @@ renderDebt();
 const payBtn = document.getElementById("will1");
 const giveUpBtn = document.getElementById("will2");
 payBtn.addEventListener("click", () => {
-  totalDebt -= events[0].price;
+  totalDebt -= events[eventIndex].price;
   renderDebt()
   audioPotato();
-  
+  eventIndex = Math.floor(Math.random() * events.length);
+  renderEvent()
 });
+
+function renderEvent() {
+  const event = document.getElementById('event')
+  event.innerText = events[eventIndex].event
+  const will2 = document.getElementById('will1')
+  will2.innerText = events[eventIndex].action
+}
+renderEvent()
 
 giveUpBtn.addEventListener("click", () => {});
