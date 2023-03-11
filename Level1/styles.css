@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Sono', sans-serif;
 }
 
 #canvas {
@@ -24,11 +25,21 @@
 	box-sizing: border-box;
 	height: calc(40vh);
 	margin: 2rem;
-	width: 20vw;
-	border-radius: 24px;
+	width: 30rem;
+	border-radius: 12px;
 	bottom: 0;
 	position: absolute;
+	padding: 1.5rem;
 
+}
+.purchase h1 {
+	border-bottom: 1px solid lightgray;
+padding-bottom: 1rem;
+margin-bottom: 1rem;
+}
+
+.purchase p {
+	line-height: 1;
 }
 
 .status {
@@ -39,7 +50,7 @@
 	box-sizing: border-box;
 	height: 12rem;
 	width: 20vw;
-	border-radius: 24px;
+	border-radius: 12px;
 
 
 }
