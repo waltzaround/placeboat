@@ -1,18 +1,43 @@
 const events = [
   {
-    event: "fill me in Walter",
-    action: 'Pay petrol',
+    event: "It's that time of year! Time to pay your boats annual insurance premium. ",
+    action: 'Pay Insurance - $12,000',
     price: 12000,
   },
   {
-    event: "fill me in WILLLIE one eye",
-    action: 'Pay petrol',
-    price: 1200,
+    event: "Fire?  I thought this was an ocean activity? A fire breaks out when your marina-neighbour decides to bake-and-grill, and falls asleep. Your boat sustains $100,000 in damages not covered by insurance. You do not go boating.",
+    action: 'Pay $100,000 for repairs',
+    price: 100000,
   },
   {
-    event: "Crew member stuck in the toilet",
-    action: 'Pay petrol',
-    price: 120,
+    event: "Oh! Barnacles! Your boat needs cleaning, and the drydock is unavailable. You spend $6,000 on Scuba Equipment and Training, and do a sub-par job of scraping everything clean while underwater.",
+    action: 'Pay $15,000 to get a professional to do the job properly.',
+    price: 15000,
+  },
+  {
+    event: "You've finally found a free weekend! The weathers pretty awful, but that's not going to stop you. It was pretty miserable, but hey, you finally went boating.",
+    action: 'Pay $2,500 to refuel',
+    price: 2500,
+  },
+  {
+    event: "You manage to get out on the water, but your engine dies while out on the water. You require the Coastguard to tow you back, but you forgot to renew your membership.",
+    action: 'Pay $700 in Coastguard fees and $5,000 in engine repair expenses.',
+    price: 5700,
+  },
+  {
+    event: "There's water in your fuel.  Manually empty your fuel tanks, pay for disposal, and re-fill with fuel. ",
+    action: 'Pay $7,000 for fuel tank cleaning and repairs.',
+    price: 7000,
+  },
+  {
+    event: "Why does it smell like gas in here?   You forgot to turn off the LPG for the cooking range, and a crack had formed in the gas line.  ",
+    action: 'Replace the cylinder, and re-fit the range into the galley for $12,000.',
+    price: 12000,
+  },
+  {
+    event: "Your have an awesome day out on the water with the sun shining and wind in your hair. Roll a die and move forward that many places. After a plesant lunch on an island only accessible by boat, a stray rope gets caught in your propeller.",
+    action: 'Spend the rest of the afternoon and $1000 detangling and repairing the propeller.',
+    price: 12000,
   },
 ];
 function audioPotato() {
