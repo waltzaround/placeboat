@@ -1,14 +1,17 @@
 const events = [
   {
     event: "fill me in Walter",
+    action: 'Pay petrol',
     price: 12000,
   },
   {
     event: "fill me in WILLLIE one eye",
+    action: 'Pay petrol',
     price: 1200,
   },
   {
     event: "Crew member stuck in the toilet",
+    action: 'Pay petrol',
     price: 120,
   },
 ];
