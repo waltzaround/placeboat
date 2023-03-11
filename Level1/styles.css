@@ -23,7 +23,7 @@
 .purchase {
 	background-color: white;
 	box-sizing: border-box;
-	height: calc(40vh);
+	height: auto;
 	margin: 2rem;
 	width: 30rem;
 	border-radius: 12px;
