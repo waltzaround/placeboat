@@ -1,19 +1,15 @@
-const itemToBuild = [
+const events = [
   {
-    name: "new hot tub",
-    price: 24000,
+    event: "fill me in Walter",
+    price: 12000,
   },
   {
-    name: "new hot tub",
-    price: 24000,
+    event: "fill me in WILLLIE one eye",
+    price: 1200,
   },
   {
-    name: "new hot tub",
-    price: 24000,
-  },
-  {
-    name: "new hot tub",
-    price: 24000,
+    event: "Crew member stuck in the toilet",
+    price: 120,
   },
 ];
 
@@ -32,7 +28,7 @@ const itemToBuild = [
 // }
 // itemRender()
 
-let totalDebt = 0
+let totalDebt = 0;
 
 function renderDebt() {
   const item = document.getElementsByClassName('status').item(0)
@@ -42,4 +38,10 @@ function renderDebt() {
   div.appendChild(text)
   item.appendChild(div)
 }
-renderDebt()
+renderDebt();
+
+const payBtn = document.getElementById("Will");
+const giveUpBtn = document.getElementById("Will2");
+payBtn.addEventListener("click", () => {});
+
+giveUpBtn.addEventListener("click", () => {});
