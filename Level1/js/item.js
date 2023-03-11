@@ -12,6 +12,9 @@ const events = [
     price: 120,
   },
 ];
+var audio = new Audio('kaching.mp3');
+
+
 
 // function itemRender() {
 //   const purchaseDiv = document.getElementsByClassName("purchase").item(0)
