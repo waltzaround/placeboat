@@ -47,6 +47,12 @@ newAudio.play()
 }
 
 
+var audioBg = new Audio('bg-music.mp3');
+audioBg.play();
+audioBg.loop = true;
+audioBg.volume = 0.2;
+
+
 // function itemRender() {
 //   const purchaseDiv = document.getElementsByClassName("purchase").item(0)
 //   for (const item of itemToBuild) {
