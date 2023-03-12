@@ -162,7 +162,7 @@ renderDebt();
 const payBtn = document.getElementById("will1");
 const giveUpBtn = document.getElementById("will2");
 payBtn.addEventListener("click", () => {
-  totalDebt -= events[eventIndex].price;
+  totalDebt += events[eventIndex].price;
   renderDebt()
   audioPotato();
   eventIndex = Math.floor(Math.random() * events.length);
