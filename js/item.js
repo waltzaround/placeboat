@@ -184,6 +184,6 @@ giveUpBtn.addEventListener("click", () => {
     window.location = "https://i.kym-cdn.com/photos/images/newsfeed/000/048/783/a_winner_is_you20110724-22047-1nd3wif.jpg"
   } else {
     window.alert('Hah fuck off, time to pay up you rich cunt')
-    window.location = "https://www.insolvency.govt.nz/personal-debt/personal-insolvency-options/bankruptcy/"
+    window.location = "https://www.insolvency.govt.nz/support/how-do-i/apply-for-insolvency//"
   }
 });
